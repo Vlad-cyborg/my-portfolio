@@ -1,0 +1,120 @@
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-top.header-top--big {
+    margin-bottom: 145px;
+}
+
+.logo {
+    position: relative;
+    z-index: 3;
+    font-size: 42px;
+    font-weight: 900;
+
+    text-decoration: none;
+    color: #000;
+
+    &::before {
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        bottom: 7px;
+        content: "";
+        height: 10px;
+        background-color: #fbdc4d;
+        z-index: -1;
+    }
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    margin-right: 75px;
+    font-size: 20px;
+    font-weight: 700;
+
+    text-decoration: none;
+    color: #000;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 5px;
+        background-color: #fbdc4d;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    &:focus {
+        outline: 3px dotted red;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.active {
+    &::before {
+        width: 100%;
+    }
+}
+
+.header-top__socials a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 30px;
+    color: #000;
+}
+
+.header-top__socials a:last-child {
+    margin-right: 0;
+}
+
+.icon-in {
+    
+    &:hover {
+        color: #0077b5;
+    }
+
+    &:active {
+        color: #0077b5;
+    }
+}
+
+.icon-git {
+    
+    &:hover {
+        color: #6cc644;
+    }
+
+    &:active {
+        color: #6cc644;
+    }
+}
+
+.icon-vk {
+
+    &:hover {
+        color: #45668e;
+    }
+
+    &:active {
+        color: #45668e;
+    }
+}
+

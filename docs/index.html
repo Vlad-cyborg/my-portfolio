@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <ul id="page-nav">
+        <li class="active">
+            <a href="#header"></a>
+        </li>
+        <li>
+            <a href="#portfolio"></a>
+        </li>
+        <li>
+            <a href="#my-work"></a>
+        </li>
+        <li>
+            <a href="#contacts"></a>
+        </li>
+    </ul>
+
+    <header class="section-header" id="header">
+        <section class="header-top header-top--big">
+            <div class="header-top__logo">
+                <a href="index.html" class="logo">
+                    ВГ
+                </a>
+            </div>
+            <div class="header-top__nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="portfolio-page.html" class="nav-link">Работы</a>
+                <a href="contacts-page.html" class="nav-link">Контакты</a>
+            </div>
+            <div class="header-top__socials">
+                <a href="#" class="icon-in">
+                    <i class="fab fa-linkedin-in"></i> 
+                </a>
+                <a href="https://github.com/Vlad-cyborg" target="_blank" class="icon-git">
+                    <i class="fab fa-github"></i> 
+                </a>
+                <a href="https://vk.com/id136266999" target="_blank" class="icon-vk">
+                    <i class="fab fa-vk"></i> 
+                </a>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="section-header__content">
+
+                <div class="content-img">
+                    <img class="avatar" src="img/header/avatar.jpg" alt="Владислав Голубенко">
+                </div>
+
+                <div class="content-desc">
+
+                    <h1 class="content-desc__title">
+                        <span class="line-bottom">Владислав</span>
+                        <br>
+                        <span class="line-bottom">Голубенко</span>
+                    </h1>
+
+                    <div class="content-desc__text-wrapper">
+                        <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+                    </div>
+
+                    <div class="content-desc__button-wrapper">
+                        <a href="#about-me" class="button">
+                            Познакомиться
+                        </a>
+                        <a href="#contacts" class="button button--outline">
+                            Контакты
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-header__img-wrapper">
+            <img src="img/header/laptop.png" alt="">
+        </div>
+
+        <div class="section-about" id="about-me">
+            <div class="container">
+                <div class="section-about__content">
+                    <div class="about-skills">
+                        <div class="about-skills__header">
+                            <h3 class="header-info">
+                                Что я умею:
+                            </h3>
+                        </div>
+
+                        <ul class="about-skills__list">
+                            <li class="about-skills__list-item">pixel perfect, полное соответствие макету.</li>
+                            <li class="about-skills__list-item">верстаю с сеткой или без.</li>
+                            <li class="about-skills__list-item">адаптивная верстка под мобильные устройства.</li>
+                            <li class="about-skills__list-item">оптимизация под retina экраны</li>
+                            <li class="about-skills__list-item">с Bootstrap и без него.</li>
+                        </ul>
+                        <a href="#portfolio" class="button">
+                            Смотреть работы
+                        </a>
+                    </div>
+                    <div class="about-communication">
+
+                        <h2 class="about-communication__header">
+                            На связи:
+                        </h2>
+
+                        <div class="block-socials block-socials--about">
+                            <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="block-socials__item icon-telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#" class="block-socials__item icon-facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+
+                        <a href="mailto:Vladgolubenko024@gmail.com" class="about-communication__mail">
+                            Vladgolubenko024@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-portfolio" id="portfolio">
+        <div class="container">
+
+            <div class="section-portfolio__title">
+                <h2 class="section__title">Портфолио</h2>
+            </div>
+
+            <nav class="portfolio-pagination">
+                <a href="#!" class="pagination__item filter" data-filter="all">
+                    Все работы
+                </a>
+                <a href="#!" class="pagination__item filter" data-filter=".boot">
+                    Bootstrap
+                </a> 
+                <a href="#!" class="pagination__item filter" data-filter=".wp">
+                    WordPress
+                </a> 
+                <a href="#!" class="pagination__item filter" data-filter=".front">
+                    Frontend
+                </a>    
+            </nav>
+
+            <div class="section-portfolio__row" id="portfolio-projects">
+ 
+                <div class="portfolio-card mix front">
+                        <a href="project-page.html" class="portfolio-card__img">
+                            <img src="img/portfolio/forest.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
+
+                        <div class="portfolio-card__desc portfolio-card__desc--big">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix front">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/imac.jpg" alt="Верстка лендинга">
+                        </a>
+
+                        <a class="card-link card-link--big" href="#">Сайт для коворкинга &ldquo;Мечта&rdquo;</a>
+
+                        <div class="portfolio-card__desc portfolio-card__desc--big">
+                            Верстка лендинга. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix boot">
+                            <a href="#" class="portfolio-card__img">
+                                <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                            </a>
+
+                            <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                            <div class="portfolio-card__desc">
+                                Верстка многостраничного сайта. 
+                            </div>
+                </div>
+
+                <div class="portfolio-card mix boot wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix boot">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix boot wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix boot">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix boot wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+                <div class="portfolio-card mix wp">
+                        <a href="#" class="portfolio-card__img">
+                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        </a>
+
+                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+
+                        <div class="portfolio-card__desc">
+                            Верстка многостраничного сайта. 
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-my-work title-center" id="my-work">
+        <div class="container">
+
+            <div class="section-my-work__title title-center">
+                <h2 class="section__title">
+                    Как я работаю
+                </h2>
+            </div>
+
+            <div class="section-my-work__content-block-wrapper">
+
+                <div class="section-my-work__content-block">
+
+                    <div class="content-block__img-wrapper">      
+                        <div class="content-block__img">
+                            <img class="work-icon" src="img/my-work/maket.svg" alt="Оцениваю макет">
+                        </div>
+                    </div>
+
+                    <div class="content-block__content">
+                        <div class="content-block__title">
+                            <h4 class="title-info">
+                                Оцениваю макет
+                            </h4>
+                        </div>
+
+                        <p class="content-block__text">
+                            Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                        </p>
+
+                        <div class="content-block__time">
+                            Время: 2 - 4 часа
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-my-work__content-block">
+
+                    <div class="content-block__img-wrapper">
+                        <div class="content-block__img">
+                            <img class="presentation" src="img/my-work/presentation.svg" alt="График работ">
+                        </div>
+
+                    </div>
+
+                    <div class="content-block__content">
+                        <div class="content-block__title">
+                            <div class="title-info">
+                                ТЗ, смета и график работ
+                            </div>
+                        </div>
+
+                        <p class="content-block__text">
+                            Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.
+                        </p>
+
+                        <div class="content-block__time">
+                            Время: 2 - 4 часа
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-my-work__content-block">
+
+                    <div class="content-block__img-wrapper">
+                        <div class="content-block__img">
+                            <img src="img/my-work/time.svg" alt="Оцениваю макет">
+                        </div>
+                    </div>
+
+                    <div class="content-block__content">
+                        <div class="content-block__title">
+                            <div class="title-info">
+                                Вы держите руку на пульсе
+                            </div>
+                        </div>
+
+                        <p class="content-block__text">
+                            Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.
+                        </p>
+
+                        <div class="content-block__time">
+                            Время: 2 часа
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-my-work__content-block">
+
+                    <div class="content-block__img-wrapper">
+                        <div class="content-block__img">
+                            <img src="img/my-work/code.svg" alt="Оцениваю макет">
+                        </div>
+                    </div>
+
+                    <div class="content-block__content">
+                        <div class="content-block__title">
+                            <div class="title-info">
+                                Выполняю каждый этап
+                            </div>
+                        </div>
+
+                        <p class="content-block__text">
+                            Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.
+                        </p>
+
+                        <div class="content-block__time">
+                            Время: 2 - 4 часа
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-my-work__content-block">
+  
+                    <div class="content-block__img">
+                        <img src="img/my-work/diamond.svg" alt="Оцениваю макет">
+                    </div>
+       
+                    <div class="content-block__content">
+                        <div class="content-block__title">
+                            <div class="title-info">
+                                Финальное ревью проекта
+                            </div>
+                        </div>
+
+                        <p class="content-block__text">
+                            Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.
+                        </p>
+
+                        <div class="content-block__time">
+                            Время: 2 - 4 часа
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contacts" id="contacts">
+
+        <div class="container"> 
+
+            <div class="section-contacts__title title-center">
+                <h2 class="section__title">
+                    Контакты
+                </h2>
+            </div>
+
+            <div class="contacts-wrapper">
+
+                <div class="contacts__content">
+                   
+                        <img src="img/bg/bg-dots.svg" class="dots" alt="">
+
+                    <div class="contacts__text">
+                        <p>
+                            Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.
+                        </p>
+                    </div> 
+
+                    <ul class="contacts__list">
+
+                        <li class="contacts__list-item">
+                            <span class="service">Email</span>
+                            <a href="mailto:Vladgolubenko024@gmail.com" class="service-link">Vladgolubenko024@gmail.com</a>
+                        </li>
+
+                        <li class="contacts__list-item">
+                            <span class="service">Skype</span>
+                            <a href="skype:live:4c7046ff84e465d6?chat" class="service-link">live:4c7046ff84e465d6</a>
+                        </li>
+
+                        <li class="contacts__list-item">
+                            <span class="service">Телефон</span>
+                            <span class="service-data">+7 (980) 123-45-67</span>
+                        </li>
+
+                        <li class="contacts__list-item">
+                            <span class="service">Адрес</span>
+                            <span class="service-data">Россия, Москва</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="block-socials">
+                        <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="block-socials__item icon-telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="block-socials__item icon-facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contacts-form__wrapper">
+                <form class="contacts__form" action="" id="contact-form">
+
+                    <input type="hidden" name="project_name" value="myportfolio.ru">
+                    <input type="hidden" name="admin_email" value="Vladgolubenko024@gmail.com">
+                    <input type="hidden" name="email_from" value="info@myportfolio.ru">
+
+                    <div class="contacts__input-wrapper">
+                        <input class="input" type="text" name="email">
+                        <span class="fake-placeholder">Ваш Email</span>
+                    </div>
+
+                    <div class="contacts__input-wrapper">
+                        <input class="input" type="text" name="theme">
+                        <span class="fake-placeholder">Тема письма</span>
+                    </div>
+
+                    <div class="contacts__input-wrapper contacts__input-wrapper--textarea">
+                        <textarea class="input input--textarea" name="message" rows="3"></textarea>
+                        <span class="fake-placeholder">Сообщение</span>
+                    </div>
+
+                    <input type="submit" class="button button--submit">
+                    
+                </form>
+                <div id="answer"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="section-contacts__footer">
+            <div class="container">
+
+                <h5 class="contact-footer__title">&copy; 2020 — Владислав Голубенко </h5>
+
+                <p>
+                    Веб-разработчик из Тюмени, занимаюсь версткой и созданием сайтов
+                </p>
+
+                <p>
+                    Этот сайт сделал в рамках прохождения обучения по версткена курсах от <a href="https://webcademy.ru/" target="_blank" class="contact-footer__link">WebCademy.ru</a>
+                </p>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
