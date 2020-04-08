@@ -1,5 +1,12 @@
 .portfolio-card {
+    width: 33%;
+    max-width: 360px;
     margin-bottom: 60px;
+
+    &:first-child, &:nth-child(2) {
+        width: 48%;
+        max-width: 556px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -37,7 +44,7 @@
 
 .card-link {
     font-size: 26px;
-    font-weight: 700;
+    font-family: 'MPLUS1p-Bold';
     color: #000;
     transition: 0.3s ease-out;
 
@@ -53,7 +60,7 @@
 
 .portfolio-card__desc {
     font-size: 20px;
-    font-weight: 300;
+    font-family: 'MPLUS1p-Light';
 }
 
 .portfolio-card__desc.portfolio-card__desc--big {

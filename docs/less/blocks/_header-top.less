@@ -15,10 +15,11 @@
     position: relative;
     z-index: 3;
     font-size: 42px;
-    font-weight: 900;
+    font-family: 'MPLUS1p-Black';
 
     text-decoration: none;
     color: #000;
+    display: block;
 
     &::before {
         position: absolute;
@@ -37,7 +38,7 @@
     display: inline-block;
     margin-right: 75px;
     font-size: 20px;
-    font-weight: 700;
+    font-family: 'MPLUS1p-Bold';
 
     text-decoration: none;
     color: #000;
@@ -46,7 +47,7 @@
     &::before {
         content: "";
         position: absolute;
-        left: 0;
+        left: -5px;
         bottom: 5px;
         width: 0;
         height: 5px;
@@ -56,7 +57,7 @@
     }
 
     &:hover::before {
-        width: 100%;
+        width: 112%;
     }
 
     &:focus {
@@ -70,7 +71,7 @@
 
 .active {
     &::before {
-        width: 100%;
+        width: 112%;
     }
 }
 
@@ -79,6 +80,7 @@
     margin-right: 15px;
     font-size: 30px;
     color: #000;
+    transition: 0.3s;
 }
 
 .header-top__socials a:last-child {

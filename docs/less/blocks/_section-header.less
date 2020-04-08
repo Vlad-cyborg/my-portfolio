@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 240px;
+    overflow: hidden;
 
     background-image: url(../img/bg/line.jpg);
     background-repeat: repeat-y;
@@ -18,9 +19,11 @@
 }
 
 .content-img {
+    display: flex;
+    justify-content: flex-end;
     z-index: 3;
     position: relative;
-    padding-top: 27px;
+    // padding-top: 27px;
     width: 50%;
    
     &:before {
@@ -37,7 +40,6 @@
 
 .avatar {
     position: relative;
-    margin-left: auto;
 }
 
 .content-desc {
@@ -45,11 +47,15 @@
 }
 
 .content-desc__title {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 90px;
-    font-weight: 900;
-    line-height: 1.2;
+    font-family: 'MPLUS1p-ExtraBold';
+    line-height: 1;
     color: #000;
+}
+
+.content-desc__title span {
+    line-height: 1;
 }
 
 .line-bottom {
@@ -58,8 +64,8 @@
 
     &::before {
         position: absolute;
-        left: 0px;
-        right: 0px;
+        left: -5px;
+        right: -5px;
         bottom: 20px;
         content: "";
         height: 12px;
@@ -75,7 +81,7 @@
 
 .content-desc p {
     font-size: 24px;
-    font-weight: medium;
+    font-family: 'MPLUS1p-Medium';
     line-height: 1.5;
 }
 
@@ -99,25 +105,25 @@
     margin-top: -130px;
 }
 
+.section-about {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
 .section-about__content {
     display: flex;
     justify-content: space-between;
 }
 
 .about-skills__header {
-    margin-bottom: 25px;
-}
-
-.header-info {
-    font-size: 40px;
-    font-weight: 900;
-    color: #000;
+    margin-bottom: 35px;
 }
 
 .about-communication__header {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 40px;
-    font-weight: 900;
+    line-height: 1;
+    font-family: 'MPLUS1p-ExtraBold';
     color: #000;
 }
 
