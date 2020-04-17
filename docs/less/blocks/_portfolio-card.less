@@ -34,11 +34,49 @@
         width: 100%;
         height: 100%;
         background-color: rgba(251, 220, 77, 0.8);
-        display: none;
+        opacity: 0;
+        transition: .5s;
     }  
 
     &:hover::before {
-        display: block;
+        opacity: 1;
+    }
+
+    &:hover > .hidden-button {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hidden-button {
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 30px;
+
+    font-family: 'MPLUS1p-ExtraBold';
+    font-size: 24px;
+    line-height: 60px;
+    color: #ea736d;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+
+    &:hover {
+        background-color: #ea736d;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: #d4423b;
     }
 }
 
