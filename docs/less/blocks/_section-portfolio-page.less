@@ -3,33 +3,86 @@
 }
 
 .section-portfolio {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 45px;
+    padding-bottom: 60px;
     background-color: #f4f8f9;
     z-index: 10;
+
+    @media (min-width: 768px) {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: 1200px) {
+        display: block;
+        padding-top: 100px;
+    }
 }
 
 .section-portfolio__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media (min-width: 390px) {
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+        
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-pagination {
-    margin-bottom: 45px;
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        margin-bottom: 45px;
+    }
+
+    @media (min-width: 1200px) {
+    
+    }
 }
 
 .pagination__item {
-    display: inline-block;
-    margin-right: 80px;
-    font-size: 28px;
-    font-family: 'MPLUS1p-ExtraBold';
-    color: #8fa5ae;
+    // display: inline-block;
+    // margin-right: 80px;
+    // font-size: 28px;
+    // font-family: 'MPLUS1p-ExtraBold';
+    // color: #8fa5ae;
 
-    &:last-child {
-        margin-right: 0;
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+
+    // &:hover {
+    //     color: #ef9895;
+    // }
+
+    @media (min-width: 768px) {
+        display: inline-block;
+        margin-right: 45px;
+        font-size: 24px;
+        font-family: 'MPLUS1p-ExtraBold';
+        color: #8fa5ae;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: #ef9895;
+        }   
     }
-
-    &:hover {
-        color: #ef9895;
+        
+    @media (min-width: 1200px) {
+        margin-right: 80px;
+        font-size: 28px;
     }
 }
 
@@ -39,14 +92,40 @@
 
 .section-portfolio__row {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     z-index: 10;
+
+    @media (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 750px;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+        
+    @media (min-width: 1200px) {
+        max-width: unset;
+    }
 }
 
 .mix {
     display: none;
 }
 
+.all-works {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #039be5;
+    // text-align: left;
+    border-bottom: 1px solid #039be5;
+}
+
+#hide {
+    display: none;
+}
 
 

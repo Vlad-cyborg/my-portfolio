@@ -33,10 +33,34 @@
                 ВГ
             </a>
             
-            <nav class="header-top__nav">
-                <a href="index.html" class="nav-link active">Главная</a>
-                <a href="portfolio-page.html" class="nav-link">Работы</a>
-                <a href="contacts-page.html" class="nav-link">Контакты</a>
+            <nav class="header-top__nav" id="header-top__nav">
+                <div class="header-top__nav-links">
+                    <a href="index.html" class="logo">
+                        ВГ
+                    </a>
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="portfolio-page.html" class="nav-link">Работы</a>
+                    <a href="contacts-page.html" class="nav-link">Контакты</a>
+                </div>
+
+                <div class="block-socials block-socials--about">
+                    <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="block-socials__item icon-telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="block-socials__item icon-facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+
+                <a href="mailto:Vladgolubenko024@gmail.com" class="about-communication__mail">
+                    Vladgolubenko024@gmail.com
+                </a>
             </nav>
 
             <div class="header-top__socials">
@@ -50,13 +74,23 @@
                     <i class="fab fa-vk"></i> 
                 </a>
             </div>
+
+            <div class="header-top__button-wrapper" id="#header-top__button-wrapper">
+                <div class="header-top__button"></div>
+            </div>
+
+            <div class="overlay"></div>
+
         </section>
 
         <div class="container">
+            
             <div class="section-header__content">
 
                 <div class="content-img">
-                    <img class="avatar" src="img/header/avatar.jpg" alt="Владислав Голубенко">
+                    <div class="avatar-wrapper">
+                        <img class="avatar" src="img/header/avatar.jpg" alt="Владислав Голубенко">
+                    </div>
                 </div>
 
                 <div class="content-desc">
@@ -137,6 +171,7 @@
                 </div>
             </div>
         </div>
+
     </header>
 
     <section class="section-portfolio" id="portfolio">
@@ -268,7 +303,7 @@
                         </div>
                 </div>
 
-                <div class="portfolio-card mix wp">
+                <div class="portfolio-card mix wp" id="hide">
                         <a href="#" class="portfolio-card__img">
                             <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
                             <span class="hidden-button">
@@ -283,7 +318,7 @@
                         </div>
                 </div>
 
-                <div class="portfolio-card mix boot">
+                <div class="portfolio-card mix boot" id="hide">
                         <a href="#" class="portfolio-card__img">
                             <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
                             <span class="hidden-button">
@@ -298,7 +333,7 @@
                         </div>
                 </div>
 
-                <div class="portfolio-card mix boot wp">
+                <div class="portfolio-card mix boot wp" id="hide">
                         <a href="#" class="portfolio-card__img">
                             <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
                             <span class="hidden-button">
@@ -313,7 +348,7 @@
                         </div>
                 </div>
 
-                <div class="portfolio-card mix wp">
+                <div class="portfolio-card mix wp" id="hide">
                         <a href="#" class="portfolio-card__img">
                             <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
                             <span class="hidden-button">
@@ -329,6 +364,11 @@
                 </div>
 
             </div>
+
+            <div class="all-works">
+                Смотреть все работы
+            </div>
+
         </div>
     </section>
 
@@ -453,13 +493,15 @@
                 </div>
 
                 <div class="section-my-work__content-block">
-  
+
+                <div class="content-block__img-wrapper-last">
                     <div class="content-block__img">
                         <div class="diamond">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g id="Layer_2" data-name="Layer 2"><path class="diamond" d="M30.84,10.75l-6.11-7A2.52,2.52,0,0,0,23.07,3h-14a2.55,2.55,0,0,0-1.67.75l-6.24,7a1.22,1.22,0,0,0,0,1.52L15.37,29.73a.78.78,0,0,0,1.26,0L30.87,12.27A1.23,1.23,0,0,0,30.84,10.75ZM10.31,13l1.89,8.09L5.59,13Zm6.63-7,1.43,4H13.63l1.43-4Zm1.67,7L16,24.18,13.39,13Zm3.08,0H26.4l-6.6,8.09Zm4.51-3H21.56L20.13,6h2.58ZM9.41,6h2.46l-1.43,4H5.85Z"/></g></svg>
                         </div>
                     </div>
-       
+                </div>
+                
                     <div class="content-block__content">
                         <div class="content-block__title">
                             <div class="title-info">
@@ -475,7 +517,7 @@
                             Время: 2 - 4 часа
                         </div>
                     </div>
-                </div>
+                </>
             </div>
         </div>
     </section>

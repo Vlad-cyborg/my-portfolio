@@ -90,6 +90,27 @@ $("#page-nav").onePageNav({
     scrollChange: function($currentListItem) {}
 });
 
+document.querySelector('.header-top__button-wrapper').onclick = function(){
+    document.querySelector('.header-top__button').classList.toggle('header-top__button-active');
+}
+
+// document.querySelector('.header-top__button-wrapper').active = function(){
+//     document.querySelector('.top-button-nav').classList.toggle('top-button-nav-active');
+// }
+
+const mobileMenu = document.querySelector('.header-top__nav');
+const mobileMenuBtn = document.querySelector('.header-top__button-wrapper');
+
+mobileMenuBtn.addEventListener('click', function(){
+    mobileMenu.classList.toggle('show');
+    document.querySelector('.overlay').classList.toggle('show');
+    document.querySelector('.logo').classList.toggle('show');
+})
+
+
+
+
+
 
 
 
