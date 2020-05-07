@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900|Roboto:100,300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
@@ -43,24 +44,26 @@
                     <a href="contacts-page.html" class="nav-link">Контакты</a>
                 </div>
 
-                <div class="block-socials block-socials--about">
-                    <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="block-socials__item icon-telegram">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
-                        <i class="fab fa-vk"></i>
-                    </a>
-                    <a href="#" class="block-socials__item icon-facebook">
-                        <i class="fab fa-facebook"></i>
+                <div class="desktop-hidden">
+                    <div class="block-socials block-socials--about">
+                        <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="block-socials__item icon-telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="block-socials__item icon-facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                    <a href="mailto:Vladgolubenko024@gmail.com" class="about-communication__mail">
+                        Vladgolubenko024@gmail.com
                     </a>
                 </div>
-
-                <a href="mailto:Vladgolubenko024@gmail.com" class="about-communication__mail">
-                    Vladgolubenko024@gmail.com
-                </a>
             </nav>
 
             <div class="header-top__socials">
@@ -181,7 +184,7 @@
                 <h2 class="section__title">Портфолио</h2>
             </div>
 
-            <nav class="portfolio-pagination">
+            <!-- <nav class="portfolio-pagination">
                 <a href="#!" class="pagination__item filter" data-filter="all">
                     Все работы
                 </a>
@@ -194,179 +197,205 @@
                 <a href="#!" class="pagination__item filter" data-filter=".front">
                     Frontend
                 </a>    
-            </nav>
+            </nav> -->
 
             <div class="section-portfolio__row" id="portfolio-projects">
  
-                <div class="portfolio-card mix front">
-                        <a href="project-page.html" class="portfolio-card__img">
-                            <img src="img/portfolio/forest.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                <div class="portfolio-card">
+                    <a href="project-page.html" class="portfolio-card__img">
+                        <img src="img/portfolio/forest.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
+                    <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
 
-                        <div class="portfolio-card__desc portfolio-card__desc--big">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc portfolio-card__desc--big">
+                        Верстка многостраничного сайта. 
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-card">
+                    <a href="project-page.html" class="portfolio-card__img">
+                        <img src="img/portfolio/forest.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
+
+                    <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
+
+                    <div class="portfolio-card__desc portfolio-card__desc--big">
+                        Верстка многостраничного сайта. 
+                    </div>
+                </div> -->
+
+                <!-- <div class="portfolio-card mix front">
+                    <a href="project-page.html" class="portfolio-card__img">
+                        <img src="img/portfolio/forest.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
+
+                    <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
+
+                    <div class="portfolio-card__desc portfolio-card__desc--big">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix front">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/imac.jpg" alt="Верстка лендинга">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/imac.jpg" alt="Верстка лендинга">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link card-link--big" href="#">Сайт для коворкинга &ldquo;Мечта&rdquo;</a>
+                    <a class="card-link card-link--big" href="#">Сайт для коворкинга &ldquo;Мечта&rdquo;</a>
 
-                        <div class="portfolio-card__desc portfolio-card__desc--big">
-                            Верстка лендинга. 
-                        </div>
+                    <div class="portfolio-card__desc portfolio-card__desc--big">
+                        Верстка лендинга. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix boot">
-                            <a href="#" class="portfolio-card__img">
-                                <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
-                                <span class="hidden-button">
-                                    Смотреть проект
-                                </span>
-                            </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                            <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                            <div class="portfolio-card__desc">
-                                Верстка многостраничного сайта. 
-                            </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix boot wp">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix wp">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix boot">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix boot wp">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix wp" id="hide">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
                 <div class="portfolio-card mix boot" id="hide">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/coffee.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
-                <div class="portfolio-card mix boot wp" id="hide">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                <div class="portfolio-card mix boot wp">
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/smartfon.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
                 </div>
 
-                <div class="portfolio-card mix wp" id="hide">
-                        <a href="#" class="portfolio-card__img">
-                            <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
-                            <span class="hidden-button">
-                                Смотреть проект
-                            </span>
-                        </a>
+                <div class="portfolio-card mix wp">
+                    <a href="#" class="portfolio-card__img">
+                        <img src="img/portfolio/orange.jpg" alt="Верстка многостраничного сайта">
+                        <span class="hidden-button">
+                            Смотреть проект
+                        </span>
+                    </a>
 
-                        <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
+                    <a class="card-link" href="#">Верстка &ldquo;Мир Авто&rdquo;</a>
 
-                        <div class="portfolio-card__desc">
-                            Верстка многостраничного сайта. 
-                        </div>
-                </div>
+                    <div class="portfolio-card__desc">
+                        Верстка многостраничного сайта. 
+                    </div>
+                </div>  -->
 
-            </div>
-
-            <div class="all-works">
-                Смотреть все работы
             </div>
 
         </div>
@@ -517,7 +546,7 @@
                             Время: 2 - 4 часа
                         </div>
                     </div>
-                </>
+                
             </div>
         </div>
     </section>

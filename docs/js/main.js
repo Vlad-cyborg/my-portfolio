@@ -98,8 +98,10 @@ document.querySelector('.header-top__button-wrapper').onclick = function(){
 //     document.querySelector('.top-button-nav').classList.toggle('top-button-nav-active');
 // }
 
-const mobileMenu = document.querySelector('.header-top__nav');
+const mobileMenu = document.querySelector('.header-top__nav'); 
+// заменил
 const mobileMenuBtn = document.querySelector('.header-top__button-wrapper');
+// заменил
 
 mobileMenuBtn.addEventListener('click', function(){
     mobileMenu.classList.toggle('show');

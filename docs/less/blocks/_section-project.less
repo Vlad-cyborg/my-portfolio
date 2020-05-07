@@ -1,8 +1,4 @@
 .line-bg {
-
-    @media (min-width: 768px) {
-
-    }
         
     @media (min-width: 1200px) {
         background-image: url(../img/bg/line.jpg);
@@ -28,7 +24,8 @@
     margin-bottom: 35px;
     font-size: 30px;
     line-height: 1.2;
-    font-family: 'MPLUS1p-ExtraBold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     color: #000;
     text-align: center;
 
@@ -51,7 +48,7 @@
         position: absolute;
         left: -5px;
         right: -5px;
-        bottom: 5px;
+        bottom: 3px;
         content: "";
         height: 10px;
         background-color: #fbdc4d;
@@ -61,14 +58,13 @@
     @media (min-width: 768px) {
         &::before {
             height: 12px;
-            bottom: 8px;
+            bottom: 5px;
     }
 }
         
     @media (min-width: 1200px) {
         &::before {
             height: 12px;
-            bottom: 10px;
     }
 }
 }
@@ -134,11 +130,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
-
-    @media (min-width: 768px) {
-        
-    }
-        
+   
     @media (min-width: 1200px) {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -147,7 +139,6 @@
 }
 
 .project-content__text {
-    // width: 450px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +182,6 @@
     }
 
     @media (min-width: 768px) {
-        // width: 47%;
         margin-bottom: 45px;
     }
         
@@ -256,11 +246,7 @@
     &:last-child {
         margin-bottom: 0;
     }
-
-    @media (min-width: 768px) {
-
-    }
-        
+  
     @media (min-width: 1200px) {
         margin-bottom: 30px;
         flex-direction: row;
@@ -271,7 +257,8 @@
 .item__left-side {
     max-width: 165px;
     font-size: 16px;
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 1.5;
     color: #161616;
 }
@@ -306,7 +293,6 @@
 }
 
 .project-content__img {
-    // width: 650px;
     width: 100%;
     margin-bottom: 55px; 
     box-shadow: 0px 14px 50px 0px rgba(196, 219, 233, 1);
@@ -380,7 +366,8 @@
 .content-text__block-title {
     position: relative;
     display: inline-block;
-    font-family: 'MPLUS1p-ExtraBold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 22px;
     color: #000;
 
@@ -388,19 +375,19 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 3px;
+        bottom: 5px;
         content: "";
         height: 7px;
         background-color: #fbdc4d;
         z-index: -1;
     }
-
-    @media (min-width: 768px) {
-
-    }
-        
+      
     @media (min-width: 1200px) {
         font-size: 26px;
+
+        &::before {
+            bottom: 7px;
+        }
     }
 }
 

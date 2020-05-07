@@ -32,7 +32,8 @@
     position: relative;
     z-index: 101;
     font-size: 42px;
-    font-family: 'MPLUS1p-Black';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 
     text-decoration: none;
     color: #000;
@@ -112,6 +113,13 @@
     }
 }
 
+.desktop-hidden {
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
 .header-top__nav .block-socials {
     display: block;
     display: flex;
@@ -123,10 +131,6 @@
         &:last-child {
             margin-right: 0;
         }
-    }
-
-    @media (min-width: 1200px) {
-        display: none;
     }
 }
 
@@ -150,10 +154,6 @@
     @media (min-width: 768px) {
         font-size: 18px;
     }
-
-    @media (min-width: 1200px) {
-        display: none;
-    }
 }
 
 .nav-link {
@@ -162,7 +162,8 @@
     width: 100px;
     margin-bottom: 20px;
     font-size: 20px;
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 
     text-decoration: underline;
     color: #000;
@@ -224,30 +225,6 @@
         margin-right: 0;
     }
 }
-
-// .overlay {
-//     display: none;
-
-//     @media (min-width: 768px) {
-//         display: block;
-//         position: fixed;
-//         z-index: 90;
-//         background-color: rgba(97, 103, 119, .5);
-//         top: 0;
-//         left: 0;
-//         height: 100vh;
-//         width: 100vw;
-//         transform: translateX(100%);
-//     }
-
-//     @media (min-width: 1200px) {
-//         display: none;
-//     }
-// }
-
-// .overlay.show {
-//     transform: translateX(0%);
-// }
 
 .active {
 
@@ -317,6 +294,7 @@
         position: fixed;
         z-index: 90;
         background-color: rgba(97, 103, 119, .5);
+        backdrop-filter: blur(5px);
         top: 0;
         left: 0;
         height: 100vh;

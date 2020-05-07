@@ -28,7 +28,6 @@
 }
 
 .contacts-wrapper {
-    // max-width: 460px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,15 +122,19 @@
 
 .service {
     display: inline-block;
-    width: 195px;
+    width: 180px;
 
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #000;
 }
 
 .service-link { 
-    font-family: 'MPLUS1p-Medium';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: #039be5;
+    border-bottom: 1px solid transparent;
+    
 
     &:hover {
         color: #ea736d;
@@ -145,12 +148,12 @@
 }
 
 .service-data {
-    font-family: 'MPLUS1p-Medium';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: #96969d;
 }
 
 .contacts-form__wrapper {
-    // width: 290px;
     margin-top: 10px;
     width: 100%;
     padding: 45px 15px 40px;
@@ -174,10 +177,6 @@
 .contacts__input-wrapper {
     position: relative;
     margin-bottom: 30px;
-
-    @media (min-width: 768px) {
-
-    }
         
     @media (min-width: 1200px) {
         margin-bottom: 50px;
@@ -186,10 +185,6 @@
 
 .contacts__input-wrapper.contacts__input-wrapper--textarea {
     margin-bottom: 12px;
-
-    @media (min-width: 768px) {
-
-    }
         
     @media (min-width: 1200px) {
         margin-bottom: 35px;
@@ -202,9 +197,8 @@
     border: none;
     border-bottom: 2px solid #eaeaea;
 
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-family: 'MPLUS1p-Bold';
     color: #000;
     transition: 0.5s;
 
@@ -226,7 +220,8 @@
     left: 5px;
     position: absolute;
     font-size: 20px;
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #bcbcbc;
     pointer-events: none;
     transition: 0.3s;
@@ -251,7 +246,8 @@
     background-color: #fbdc4d;
 
     font-size: 20px;
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 50px;
     color: #000;
 
@@ -262,11 +258,7 @@
     &:active {
         background-color: #e1bc10;
     }
-
-    @media (min-width: 768px) {
-
-    }
-        
+   
     @media (min-width: 1200px) {
         width: auto;
         height: 65px;
@@ -289,11 +281,7 @@
 
 .dots {
     display: none;
-
-    @media (min-width: 768px) {
-
-    }
-        
+    
     @media (min-width: 1200px) {
         display: block;
         position: absolute;
@@ -306,11 +294,7 @@
     padding-top: 30px;
     padding-bottom: 45px;
     background-color: #333333;
-    
-    @media (min-width: 768px) {
-
-    }
-        
+      
     @media (min-width: 1200px) {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -321,7 +305,8 @@
     margin-bottom: 10px;
 
     font-size: 18px;
-    font-family: 'MPLUS1p-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -331,7 +316,8 @@
 }
 
 .contact-footer__link {
-    font-family: 'MPLUS1p-Regular';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     font-size: 16px;
     color: #b0b0b0;
     border-bottom: 1px solid #b0b0b0;
