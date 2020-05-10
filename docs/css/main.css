@@ -1846,6 +1846,7 @@ p::selection {
 }
 .footer-inner__img-wrapper {
   max-width: 1600px;
+  margin: 0 auto;
   -webkit-transform: scale(1.8);
      -moz-transform: scale(1.8);
       -ms-transform: scale(1.8);
