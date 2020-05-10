@@ -185,16 +185,40 @@
     margin-right: auto;
     z-index: 1;
     max-width: 1600px;
-    margin-top: -60px;
+    // margin-top: -60px;
+    transform: scale(1.8);
+    margin-top: 25px;
+
+    @media (min-width: 425px) {
+        transform: scale(1.4);
+    }
+
+    @media (min-width: 580px) {
+        transform: scale(1.2);
+    }
+
+    @media (min-width: 768px) {
+        margin-top: -45px;
+        transform: scale(1);
+    }
 
     @media (min-width: 1200px) {
-        margin-top: -130px;
+        margin-top: -110px;
     }
 }
 
 .section-about {
-    padding-top: 60px;
+    padding-top: 145px;
     margin-top: -60px;
+
+    @media (min-width: 768px) {
+        padding-top: 80px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 70px;
+        margin-top: -60px;
+    }
 }
 
 .section-about__content {
