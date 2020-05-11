@@ -18,6 +18,9 @@ body {
   line-height: 1.5;
   position: relative;
 }
+body.noscroll {
+  overflow: hidden;
+}
 #page-nav {
   display: none;
 }
@@ -879,6 +882,9 @@ p::selection {
   position: relative;
   display: block;
   margin-bottom: 20px;
+  height: 100%;
+  max-height: 200px;
+  overflow: hidden;
 }
 .portfolio-card__img::before {
   content: "";
@@ -910,7 +916,15 @@ p::selection {
 @media (min-width: 1200px) {
   .portfolio-card__img {
     margin-bottom: 25px;
+    max-height: 350px;
   }
+}
+.portfolio-card__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .hidden-button {
   display: inline-block;

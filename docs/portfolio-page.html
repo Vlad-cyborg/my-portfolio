@@ -12,18 +12,41 @@
 <body class="dark">
 
     <header class="header-inner">
-    
         <section class="header-top">
-            <div class="header-top__logo">
-                <a href="index.html" class="logo">
-                    ВГ
-                </a>
-            </div>
-            <div class="header-top__nav">
-                <a href="index.html" class="nav-link">Главная</a>
-                <a href="portfolio-page.html" class="nav-link active">Работы</a>
-                <a href="contacts-page.html" class="nav-link">Контакты</a>
-            </div>
+
+            <a href="index.html" class="logo">
+                ВГ
+            </a>
+            
+            <nav class="header-top__nav" id="header-top__nav">
+                <div class="header-top__nav-links">
+                    <a href="index.html" class="logo">
+                        ВГ
+                    </a>
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="portfolio-page.html" class="nav-link active">Работы</a>
+                    <a href="contacts-page.html" class="nav-link">Контакты</a>
+                </div>
+
+                <div class="desktop-hidden">
+                    <div class="block-socials block-socials--about">
+                        <a href="https://vk.com/id136266999" target="_blank" class="block-socials__item icon-vkontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://github.com/Vlad-cyborg" target="_blank" class="block-socials__item icon-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="block-socials__item icon-telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <a href="mailto:Vladgolubenko024@gmail.com" class="about-communication__mail">
+                        Vladgolubenko024@gmail.com
+                    </a>
+                </div>
+            </nav>
+
             <div class="header-top__socials">
                 <a href="https://vk.com/id136266999" target="_blank" class="icon-vk">
                     <i class="fab fa-vk"></i> 
@@ -31,11 +54,18 @@
                 <a href="https://github.com/Vlad-cyborg" target="_blank" class="icon-git">
                     <i class="fab fa-github"></i> 
                 </a>
-                <a href="#" class=".icon-telegram">
+                <a href="#" class="icon-telegram">
                     <i class="fab fa-telegram-plane"></i> 
                 </a>
             </div>
-        </section>
+
+            <div class="header-top__button-wrapper" id="header-top__button-wrapper">
+                <div class="header-top__button" id="header-top__button"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+        </section>  
     </header>
 
         <section class="section-portfolio" id="portfolio">
@@ -62,9 +92,9 @@
 
                 <div class="section-portfolio__row" id="portfolio-projects">
     
-                    <!-- <div class="portfolio-card">
+                    <div class="portfolio-card">
                         <a href="project-page.html" class="portfolio-card__img">
-                            <img src="img/portfolio/forest-travel.jpg" alt="Верстка многостраничного сайта">
+                            <img src="img/portfolio/harley1.jpg" alt="Верстка многостраничного сайта">
                             <span class="hidden-button">
                                 Смотреть проект
                             </span>
@@ -90,7 +120,22 @@
                         <div class="portfolio-card__desc portfolio-card__desc--big">
                             Верстка многостраничного сайта. 
                         </div>
-                    </div> -->
+                    </div>
+
+                    <div class="portfolio-card">
+                        <a href="project-page.html" class="portfolio-card__img">
+                            <img src="img/portfolio/harley1.jpg" alt="Верстка многостраничного сайта">
+                            <span class="hidden-button">
+                                Смотреть проект
+                            </span>
+                        </a>
+    
+                        <a class="card-link card-link--big" href="project-page.html">Верстка &ldquo;Форест тревел&rdquo;</a>
+    
+                        <div class="portfolio-card__desc portfolio-card__desc--big">
+                            Верстка многостраничного сайта. 
+                        </div>
+                    </div>
 
                     <!-- <div class="portfolio-card mix front">
                             <a href="project-page.html" class="portfolio-card__img">

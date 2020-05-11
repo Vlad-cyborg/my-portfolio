@@ -1,4 +1,6 @@
 // FILTRATION
+if (($("div").is("#portfolio-projects"))) {
+
 $(document).ready(function(){
     $('#portfolio-projects').mixItUp();
   });
@@ -23,8 +25,11 @@ $(document).ready(function(){
           }
       })
   }
+}
   
 // FORM VALIDATE
+if (($("div").is("#contact-form"))) {
+
 $('#contact-form').validate({
     rules: {
         email: {
@@ -54,6 +59,7 @@ $('#contact-form').validate({
         ajaxFormSubmit();
     }
 })
+}
 
 // Функция AJAX запрса на сервер
 function ajaxFormSubmit() {
@@ -78,6 +84,8 @@ function ajaxFormSubmit() {
 }
 
 // NAV PAGE
+if (($("div").is("#page-nav"))) {
+
 $("#page-nav").onePageNav({
     currentClass: "active",
     changeHash: false,
@@ -89,24 +97,35 @@ $("#page-nav").onePageNav({
     end: function() {},
     scrollChange: function($currentListItem) {}
 });
-
-document.querySelector('.header-top__button-wrapper').onclick = function(){
-    document.querySelector('.header-top__button').classList.toggle('header-top__button-active');
 }
+
+// document.querySelector('.header-top__button-wrapper').onclick = function(){
+//     document.querySelector('.header-top__button').classList.toggle('header-top__button-active');
+// }
 
 // document.querySelector('.header-top__button-wrapper').active = function(){
 //     document.querySelector('.top-button-nav').classList.toggle('top-button-nav-active');
 // }
 
-const mobileMenu = document.querySelector('.header-top__nav'); 
+const mobileMenu = document.querySelector('#header-top__nav'); 
 // заменил
-const mobileMenuBtn = document.querySelector('.header-top__button-wrapper');
+const mobileMenuBtn = document.querySelector('#header-top__button-wrapper');
 // заменил
+const mobileBtnSpan = mobileMenuBtn.querySelector('#header-top__button');
 
 mobileMenuBtn.addEventListener('click', function(){
+    mobileBtnSpan.classList.toggle('header-top__button-active');
     mobileMenu.classList.toggle('show');
     document.querySelector('.overlay').classList.toggle('show');
     document.querySelector('.logo').classList.toggle('show');
+    document.body.classList.toggle('noscroll');
+})
+
+window.addEventListener('resize', function(){
+    mobileBtnSpan.classList.remove('header-top__button-active');
+    mobileMenu.classList.remove('show');
+    document.querySelector('.overlay').classList.remove('show');
+    document.body.classList.remove('noscroll');
 })
 
 
