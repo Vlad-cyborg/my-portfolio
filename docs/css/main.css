@@ -814,7 +814,7 @@ p::selection {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
-    width: 100%;
+    width: 708px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -840,7 +840,7 @@ p::selection {
 @media (min-width: 1200px) {
   .section-portfolio__row {
     margin-bottom: 0;
-    max-width: unset;
+    width: 100%;
   }
 }
 .mix {
@@ -874,7 +874,7 @@ p::selection {
   }
   .portfolio-card:first-child,
   .portfolio-card:nth-child(2) {
-    width: 48%;
+    width: 50%;
     max-width: 556px;
   }
 }
@@ -882,9 +882,6 @@ p::selection {
   position: relative;
   display: block;
   margin-bottom: 20px;
-  height: 100%;
-  max-height: 200px;
-  overflow: hidden;
 }
 .portfolio-card__img::before {
   content: "";
@@ -916,15 +913,7 @@ p::selection {
 @media (min-width: 1200px) {
   .portfolio-card__img {
     margin-bottom: 25px;
-    max-height: 350px;
   }
-}
-.portfolio-card__img img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 .hidden-button {
   display: inline-block;
@@ -977,7 +966,6 @@ p::selection {
 .card-link:hover,
 .card-link:active {
   color: #ed574f;
-  border-bottom: 1px solid #ed574f;
 }
 @media (min-width: 768px) {
   .card-link {
@@ -1699,7 +1687,21 @@ p::selection {
 @media (min-width: 1200px) {
   .project-content__img {
     width: 650px;
+    position: relative;
     margin-bottom: 0;
+  }
+}
+.project-content__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+@media (min-width: 1200px) {
+  .project-content__img img {
+    position: absolute;
   }
 }
 .button-wrapper {
