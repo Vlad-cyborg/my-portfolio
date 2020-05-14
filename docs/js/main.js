@@ -28,7 +28,7 @@ $(document).ready(function(){
 }
   
 // FORM VALIDATE
-if (($("div").is("#contact-form"))) {
+if (($("form").is("#contact-form"))) {
 
 $('#contact-form').validate({
     rules: {
@@ -99,18 +99,10 @@ $("#page-nav").onePageNav({
 });
 }
 
-// document.querySelector('.header-top__button-wrapper').onclick = function(){
-//     document.querySelector('.header-top__button').classList.toggle('header-top__button-active');
-// }
-
-// document.querySelector('.header-top__button-wrapper').active = function(){
-//     document.querySelector('.top-button-nav').classList.toggle('top-button-nav-active');
-// }
-
 const mobileMenu = document.querySelector('#header-top__nav'); 
-// заменил
+
 const mobileMenuBtn = document.querySelector('#header-top__button-wrapper');
-// заменил
+
 const mobileBtnSpan = mobileMenuBtn.querySelector('#header-top__button');
 
 mobileMenuBtn.addEventListener('click', function(){

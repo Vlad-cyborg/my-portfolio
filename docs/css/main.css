@@ -827,11 +827,6 @@ p::selection {
        -moz-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -841,6 +836,7 @@ p::selection {
   .section-portfolio__row {
     margin-bottom: 0;
     width: 100%;
+    width: 1140px;
   }
 }
 .mix {
@@ -858,6 +854,10 @@ p::selection {
   .portfolio-card {
     width: 48%;
     margin-bottom: 40px;
+    margin-right: 28px;
+  }
+  .portfolio-card:nth-child(2n+2) {
+    margin-right: 0;
   }
   .portfolio-card:last-child {
     margin-bottom: 40px;
@@ -871,6 +871,12 @@ p::selection {
   }
   .portfolio-card:last-child {
     margin-bottom: 60px;
+  }
+  .portfolio-card:nth-child(3n+4) {
+    margin-right: 28px;
+  }
+  .portfolio-card:nth-child(3n+2) {
+    margin-right: 0;
   }
   .portfolio-card:first-child,
   .portfolio-card:nth-child(2) {

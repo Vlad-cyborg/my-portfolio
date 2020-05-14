@@ -10,6 +10,11 @@
     @media (min-width: 768px) {
         width: 48%;
         margin-bottom: 40px;
+        margin-right: 28px;
+
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-bottom: 40px;
@@ -25,10 +30,18 @@
             margin-bottom: 60px;
         }
 
-    &:first-child, &:nth-child(2) {
-        width: 50%;
-        max-width: 556px;
-    }
+        &:nth-child(3n+4) {
+            margin-right: 28px;
+        }
+
+        &:nth-child(3n+2) {
+            margin-right: 0;
+        }
+
+        &:first-child, &:nth-child(2) {
+            width: 50%;
+            max-width: 556px;
+        }
     }
 }
 
