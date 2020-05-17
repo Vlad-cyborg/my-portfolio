@@ -835,7 +835,6 @@ p::selection {
 @media (min-width: 1200px) {
   .section-portfolio__row {
     margin-bottom: 0;
-    width: 100%;
     width: 1140px;
   }
 }

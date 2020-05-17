@@ -3,7 +3,7 @@ if (($("div").is("#portfolio-projects"))) {
 
 $(document).ready(function(){
     $('#portfolio-projects').mixItUp();
-  });
+})};
   
 // PLACEHOLDER
   const formRows = document.querySelectorAll('.contacts__input-wrapper')
@@ -25,7 +25,8 @@ $(document).ready(function(){
           }
       })
   }
-}
+
+
   
 // FORM VALIDATE
 if (($("form").is("#contact-form"))) {
