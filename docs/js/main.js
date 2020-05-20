@@ -85,7 +85,7 @@ function ajaxFormSubmit() {
 }
 
 // NAV PAGE
-if (($("div").is("#page-nav"))) {
+if (($("ul").is("#page-nav"))) {
 
 $("#page-nav").onePageNav({
     currentClass: "active",
